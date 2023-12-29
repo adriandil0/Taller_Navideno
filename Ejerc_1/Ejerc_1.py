@@ -7,5 +7,4 @@ while contador < 3:
     else:
         sumatoria=num+sumatoria
         contador+=1
-print("*****************************************")
 print(f"El resultado de la suma es: {sumatoria}")
