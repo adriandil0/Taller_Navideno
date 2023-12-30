@@ -18,9 +18,12 @@ def indiceMasaCorporal(altura, peso):
     return imc , status
 
 while isContinue == '':
-    peso = float(input("Ingrese su peso en [KG]    : "))
+    name = input("Ingrese su nombre : ")
+    edad = int(input("Ingrese su edad : "))
+    peso = float(input("Ingrese su peso en [KG] : "))
     altura = float(input("Ingrese su altura en [m] : "))
     # Llamada a la función
+    print(f"Señor(a) {name} su edad es {edad} años y")
     indiceMasaCorporal(altura, peso)
     decision = input("Presiona enter para hacer otra consulta o finish para terminar : ").lower()
     while decision != 'finish' and decision != '':
